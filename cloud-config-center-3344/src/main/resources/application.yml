@@ -11,11 +11,11 @@ spring:
           search-paths:
             - springcloud-config
       label: master
-#  rabbitmq: #mq相关配置
-#    host: localhost
-#    port: 5672
-#    username: guest
-#    password: guest
+  rabbitmq: #mq相关配置
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     register-with-eureka: true
@@ -24,8 +24,8 @@ eureka:
       #      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
       defaultZone: http://eureka7001.com:7001/eureka
 # rabbitmq相关配置，暴露bus刷新点
-#management:
-#  endpoints: #暴露bus刷新配置的端点
-#    web:
-#      exposure:
-#        include: 'bus-refresh'
+management:
+  endpoints: #暴露bus刷新配置的端点
+    web:
+      exposure:
+        include: 'bus-refresh'
